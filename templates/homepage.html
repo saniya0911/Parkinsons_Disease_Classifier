@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parkinson's Disease Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .predict-button {
+      padding: 12px 24px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .predict-button:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Parkinson's Disease Prediction</h1>
+  </header>
+
+  <div class="container">
+    <p>
+      Parkinson’s Disease is a progressive disorder of the nervous system that affects movement.
+      This application aims to assist early detection of Parkinson’s Disease using machine learning models based on vocal features or other clinical data.
+    </p>
+    <p>
+      By analyzing the input parameters, this system can help provide insights into whether a patient might be affected by Parkinson’s Disease, which can assist in early diagnosis and treatment.
+    </p>
+
+    <div class="button-container">
+      <a class="predict-button" href="predict.html">Predict Disease</a>
+    </div>
+  </div>
+
+</body>
+</html>
